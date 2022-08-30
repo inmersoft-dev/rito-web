@@ -1,1 +1,27 @@
-{ "es": {} }
+{
+  "es": {
+    "Links": {
+      "Home": {
+        "Label": "Inicio",
+        "To": "#home"
+      },
+      "About": {
+        "Label": "¿Quienes somos?",
+        "To": "#about"
+      },
+      "Buy": {
+        "Label": "Comprar",
+        "To": "#buy"
+      },
+      "Contact": {
+        "Label": "Contáctenos",
+        "To": "#contact"
+      },
+      "Login": {
+        "Label": "Iniciar sesión",
+        "To": "/login",
+        "Pretty": true
+      }
+    }
+  }
+}
