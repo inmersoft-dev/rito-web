@@ -7,7 +7,7 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "sito-container": "^0.2.21",
-    "sito-image": "^0.3.7"
+    "sito-image": "^0.3.9"
   },
   "scripts": {
     "start": "react-scripts start",

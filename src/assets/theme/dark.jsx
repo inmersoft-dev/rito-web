@@ -2,20 +2,34 @@ import { createTheme } from "@mui/material/styles";
 
 import darkScrollbar from "./scroll";
 
-const dark = createTheme({
+const light = createTheme({
   palette: {
-    type: "dark",
+    type: "light",
     primary: {
-      main: "#ffa41e",
-      light: " #ff9d33",
-      dark: "#b25d00",
+      main: "#8bcfdf",
+      light: "#a2d8e5",
+      dark: "#003b47",
       contrastText: "#ffffff",
     },
     secondary: {
-      main: "#666666",
-      light: "#848484",
-      dark: "#474747",
+      main: "#11263C",
+      light: "#0b1a2a",
+      dark: "#405163",
       contrastText: "#ffffff",
+    },
+    background: {
+      default: "#efefef",
+      paper: "#fafafa",
+    },
+    text: {
+      main: "#272F40",
+      primary: "rgba(0,0,0,0.87)",
+      secondary: "rgba(0,0,0,0.54)",
+      disabled: "rgba(0,0,0,0.38)",
+      hint: "rgba(0,0,0,0.38)",
+    },
+    side: {
+      main: "rgba(0,0,0,0.54)",
     },
     error: {
       main: "#f44336",
@@ -42,36 +56,8 @@ const dark = createTheme({
       contrastText: "rgba(0,0,0,0.87)",
     },
     divider: "rgba(0,0,0,0.12)",
-    background: {
-      default: "#fff",
-      paper: "#e7e5e5",
-    },
-    text: {
-      main: "#272F40",
-      primary: "rgba(0,0,0,0.87)",
-      secondary: "rgba(0,0,0,0.54)",
-      disabled: "rgba(0,0,0,0.38)",
-      hint: "rgba(0,0,0,0.38)",
-    },
   },
   typography: {
-    typography: {
-      fontFamily: [
-        "Inter",
-        "Helvetica Neue",
-        "Arial",
-        "-apple - system",
-        "BlinkMacSystemFont",
-        "Segoe UI",
-        "Roboto",
-        "Noto Sans",
-        "sans - serif",
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
-        "Noto Color Emoji",
-      ].join(","),
-    },
     fontSize: 14,
     fontWeightLight: 300,
     fontWeightRegular: 400,
@@ -162,12 +148,12 @@ const dark = createTheme({
       styleOverrides: {
         body: darkScrollbar({
           track: "#FFFFFF00",
-          thumb: "#ffa41e",
-          active: "#ff9d33",
+          thumb: "#bdbbbb",
+          active: "#bdbbbb",
         }),
       },
     },
   },
 });
 
-export default dark;
+export default light;

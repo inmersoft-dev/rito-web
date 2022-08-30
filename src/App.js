@@ -1,6 +1,12 @@
 // sito components
 import SitoContainer from "sito-container";
 
+// @mui components
+import { ThemeProvider, CssBaseline } from "@mui/material";
+
+// theme
+import dark from "./assets/theme/dark";
+
 // components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -15,14 +21,17 @@ import "./App.css";
 
 function App() {
   return (
-    <SitoContainer>
-      <Navbar />
-      <Hero />
-      <About />
-      <Buy />
-      <Contact />
-      <Footer />
-    </SitoContainer>
+    <ThemeProvider theme={dark}>
+      <CssBaseline />
+      <SitoContainer>
+        <Navbar />
+        <Hero />
+        <About />
+        <Buy />
+        <Contact />
+        <Footer />
+      </SitoContainer>
+    </ThemeProvider>
   );
 }
 
