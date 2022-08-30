@@ -22,6 +22,12 @@
         "To": "/login",
         "Pretty": true
       }
+    },
+    "Hero": {
+      "SmallTitle": "Agua purificada y ozonificada",
+      "BigTitle": "Tome el agua de mejor calidad",
+      "Description": "Nuestra agua pasa por un proceso de filtrado y purificación que brinda la calidad óptima de agua potable",
+      "Button": "Obtener agua"
     }
   }
 }

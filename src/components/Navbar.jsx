@@ -33,7 +33,7 @@ const Navbar = () => {
     <Box
       sx={{
         padding: "40px 60px 40px 0",
-        paddingLeft: { lg: "15rem", md: "10rem", xs: "5rem" },
+        paddingLeft: { lg: "12rem", md: "10rem", xs: "5rem" },
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",

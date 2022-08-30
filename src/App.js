@@ -23,7 +23,7 @@ function App() {
   return (
     <ThemeProvider theme={dark}>
       <CssBaseline />
-      <SitoContainer>
+      <SitoContainer flexDirection="column">
         <Navbar />
         <Hero />
         <About />
