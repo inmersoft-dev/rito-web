@@ -12,3 +12,75 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.float-y {
+  position: absolute;
+  overflow: hidden;
+  animation: float-y 4s linear infinite;
+}
+
+@keyframes float-y {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-x {
+  position: absolute;
+  overflow: hidden;
+  animation: float-x 4s linear infinite;
+}
+
+@keyframes float-x {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.float-radial {
+  position: absolute;
+  overflow: hidden;
+  animation: float-radial 20s linear infinite;
+}
+
+@keyframes float-radial {
+  0% {
+    transform: translate(-10px, 0px);
+  }
+  40% {
+    transform: translate(60px, -20px);
+  }
+  100% {
+    transform: translate(-20px, -100px);
+  }
+}
+
+.float-inv-radial {
+  position: absolute;
+  overflow: hidden;
+  animation: float-radial 20s linear infinite;
+}
+
+@keyframes float-inv-radial {
+  0% {
+    transform: translate(-10px, 0px);
+  }
+  40% {
+    transform: translate(60px, -20px);
+  }
+  100% {
+    transform: translate(-20px, -100px);
+  }
+}
