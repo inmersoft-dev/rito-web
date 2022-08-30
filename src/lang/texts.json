@@ -28,6 +28,24 @@
       "BigTitle": "Tome el agua de mejor calidad",
       "Description": "Nuestra agua pasa por un proceso de filtrado y purificación que brinda la calidad óptima de agua potable",
       "Button": "Obtener agua"
+    },
+    "About": {
+      "SmallTitle": "Agua purificada y ozonificada",
+      "BigTitle": "¿Sabes porqué nuestra agua es mejor?",
+      "List": [
+        {
+          "Title": "Compromiso",
+          "Description": "En Agua plus, nuestra razón de ser es lograr agua purificada y hielo que satisfagan las necesidades de cliente y consumidores. Por ello, la mejora continua y la calidad son tareas inagotables"
+        },
+        {
+          "Title": "Calidad",
+          "Description": "Nuestros productos cumplen con las normas y estándares nacionales e internacionales correspondientes, y buscamos ser cada vez eficientes en nuestros procesos"
+        },
+        {
+          "Title": "Servicio",
+          "Description": "Evaluamos de manera permanente nuestra relación comercial con clientes y consumidores finales a través de nuestros centros de servicio, de atención telefónica y redes sociales"
+        }
+      ]
     }
   }
 }

@@ -1,6 +1,3 @@
-// sito components
-import SitoContainer from "sito-container";
-
 // @mui components
 import { useTheme, Box, Button, Typography } from "@mui/material";
 
