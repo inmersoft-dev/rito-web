@@ -1,22 +1,28 @@
+// sito components
+import SitoContainer from "sito-container";
+
+// components
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+// sections
+import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Buy from "./sections/Buy";
+import Contact from "./sections/Contact";
+
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SitoContainer>
+      <Navbar />
+      <Hero />
+      <About />
+      <Buy />
+      <Contact />
+      <Footer />
+    </SitoContainer>
   );
 }
 
