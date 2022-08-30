@@ -32,6 +32,7 @@ const Navbar = () => {
   return (
     <Box
       sx={{
+        background: "#fff",
         padding: "40px 60px 40px 0",
         paddingLeft: { lg: "12rem", md: "10rem", xs: "5rem" },
         display: "flex",
