@@ -25,6 +25,7 @@ const About = () => {
         padding: "100px 40px 100px 0",
         paddingLeft: { lg: "12rem", md: "5rem", xs: "40px" },
         display: "flex",
+        flexDirection: "column",
         position: "relative",
       }}
     >
@@ -63,8 +64,8 @@ const About = () => {
         sx={{
           width: "250px",
           height: "160px",
-          right: "25%",
-          top: "60%",
+          right: "20%",
+          top: "90%",
           transform: "rotate(45deg)",
         }}
       >
@@ -79,6 +80,7 @@ const About = () => {
           }}
         />
       </Box>
+      {/* main section */}
       <Box
         sx={{
           width: { xs: "100%", sm: "90%", md: "600px" },

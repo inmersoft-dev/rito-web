@@ -45,7 +45,12 @@
           "Title": "Servicio",
           "Description": "Evaluamos de manera permanente nuestra relación comercial con clientes y consumidores finales a través de nuestros centros de servicio, de atención telefónica y redes sociales"
         }
-      ]
+      ],
+      "CatchToAction": {
+        "SmallTitle": "Suministro constante de hielo y agua",
+        "BigTitle": "Ordena entrega de agua diaria, semanal o mensual",
+        "Button": "Obtener agua"
+      }
     }
   }
 }
