@@ -1,29 +1,99 @@
 // sito components
 import SitoContainer from "sito-container";
+import SitoImage from "sito-image";
 
 // @mui components
-import { useTheme, Box, Divider, Typography } from "@mui/material";
+import { useTheme, Box, Typography } from "@mui/material";
 
 // contexts
 import { useLanguage } from "../context/LanguageProvider";
 
-const HowWeWork = () => {
+// images
+import Bubble from "../assets/images/bubble.png";
+import feature1 from "../assets/images/8.png";
+import feature2 from "../assets/images/9.png";
+import feature3 from "../assets/images/10.png";
+import feature4 from "../assets/images/11.png";
+
+const Process = () => {
   const theme = useTheme();
   const { languageState } = useLanguage();
+
+  const image = [feature1, feature2, feature3, feature4];
 
   return (
     <Box
       sx={{
         width: "100%",
-        padding: { xs: "100px 40px", md: "100px 15rem", lg: "100px 20rem" },
-        margin: "135px 0",
-        height: "70vh",
+        margin: "135px 0 100px 0",
+        padding: { lg: "0 15rem", md: "0 5rem" },
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
+        position: "relative",
       }}
     >
+      <Box
+        className="float-inv-radial"
+        sx={{
+          width: "150px",
+          height: "90px",
+          right: 0,
+          top: "50px",
+        }}
+      >
+        <Box
+          className="float-y"
+          sx={{
+            width: "150px",
+            height: "90px",
+          }}
+        >
+          <SitoImage
+            src={Bubble}
+            alt="bubble"
+            sx={{ objectFit: "contain", width: "100%", height: "100%" }}
+          />
+        </Box>
+      </Box>
+      <Box
+        className="float-y"
+        sx={{
+          display: { xs: "none", md: "initial" },
+          width: "360px",
+          height: "234px",
+          left: -100,
+          top: "50%",
+        }}
+      >
+        <SitoImage
+          src={Bubble}
+          alt="bubble"
+          sx={{ objectFit: "contain", width: "100%", height: "100%" }}
+        />
+      </Box>
+      <Box
+        className="float-y"
+        sx={{
+          width: "250px",
+          height: "160px",
+          right: "20%",
+          top: "90%",
+          transform: "rotate(45deg)",
+        }}
+      >
+        <SitoImage
+          src={Bubble}
+          alt="bubble"
+          sx={{
+            objectFit: "contain",
+            width: "100%",
+            height: "100%",
+            filter: "blur(4px)",
+          }}
+        />
+      </Box>
       <Typography
         variant="h3"
         sx={{
@@ -33,27 +103,26 @@ const HowWeWork = () => {
           color: theme.palette.primary.dark,
         }}
       >
-        {languageState.texts.Buy.HowWeWork.BigTitle}
+        {languageState.texts.Buy.Process.BigTitle}
       </Typography>
-      <Typography
-        variant="body"
-        sx={{ textAlign: "center", color: theme.palette.primary.dark }}
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          marginTop: "100px",
+        }}
       >
-        {languageState.texts.Buy.HowWeWork.SmallTitle}
-      </Typography>
-      <Box sx={{ display: "flex", marginTop: "100px" }}>
-        {languageState.texts.Buy.HowWeWork.List.map((item, i) => (
+        {languageState.texts.Buy.Process.List.map((item, i) => (
           <SitoContainer
             flexDirection="column"
             alignItems="center"
             sx={{
               padding: "0 30px",
-              width: "350px",
-              height: " 400px",
+              width: "450px",
+              height: "450px",
               marginRight: "40px",
               borderRadius: "1rem",
-              background: theme.palette.background.paper,
-              boxShadow: "3px 15px 27px -28px",
             }}
           >
             <SitoContainer
@@ -62,28 +131,23 @@ const HowWeWork = () => {
               sx={{
                 borderRadius: "100%",
                 padding: "25px 30px",
-                boxShadow: "3px 7px 27px -8px",
-                width: "100px",
-                height: "100px",
+                boxShadow: "3px 7px 27px -17px",
+                width: "120px",
+                height: "120px",
                 marginTop: "-50px",
                 marginBottom: "70px",
                 background: theme.palette.background.default,
               }}
             >
-              <Typography
-                color="primary"
-                fontSize="3rem"
-                className="prevent-select"
-              >
-                0{i + 1}
-              </Typography>
+              <SitoImage
+                src={image[i]}
+                alt={`feature${i}`}
+                sx={{ width: "90px", height: "90px" }}
+              />
             </SitoContainer>
             <Typography variant="h5" sx={{ fontWeight: "400" }}>
               {item.Title}
             </Typography>
-            <Divider
-              sx={{ width: "100%", margin: "20px 0", borderWidth: "2px" }}
-            />
             <Typography sx={{ textAlign: "center" }}>
               {item.Description}
             </Typography>
@@ -94,4 +158,4 @@ const HowWeWork = () => {
   );
 };
 
-export default HowWeWork;
+export default Process;

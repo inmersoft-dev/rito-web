@@ -75,18 +75,23 @@ code {
 
 .float-inv-radial {
   position: absolute;
-  overflow: hidden;
-  animation: float-radial 20s linear infinite;
+  animation: float-inv-radial 20s ease infinite;
 }
 
 @keyframes float-inv-radial {
   0% {
-    transform: translate(-10px, 0px);
+    transform: translate(-20px, -20px);
   }
-  40% {
-    transform: translate(60px, -20px);
+  25% {
+    transform: translate(0px, -40px);
+  }
+  50% {
+    transform: translate(20px, -20px);
+  }
+  75% {
+    transform: translate(0, -20px);
   }
   100% {
-    transform: translate(-20px, -100px);
+    transform: translate(-20px, -20px);
   }
 }

@@ -15,6 +15,7 @@ const CatchToAction = () => {
     <Box
       sx={{
         background: `url(${Catch})`,
+        backgroundSize: "contain",
         width: "100%",
         padding: { xs: "40px", md: "50px 15rem", lg: "50px 20rem" },
         height: "70vh",
@@ -44,15 +45,15 @@ const CatchToAction = () => {
       </Typography>
       <Button
         sx={{
-          marginTop: "20px",
-          color: theme.palette.primary.dark,
-          border: `2px solid ${theme.palette.primary.main}1B`,
+          color: "#fff",
           padding: "9px 35px",
           borderRadius: "28.76px",
-          background: `${theme.palette.primary.main}1B`,
+          background: theme.palette.primary.main,
+          fontSize: "16px",
+          textTransform: "Capitalize",
           "&:hover": {
-            color: "#ffffff",
-            background: theme.palette.primary.main,
+            color: theme.palette.primary.dark,
+            background: "#fff",
           },
         }}
       >

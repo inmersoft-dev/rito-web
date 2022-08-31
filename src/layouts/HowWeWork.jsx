@@ -15,7 +15,7 @@ const HowWeWork = () => {
     <Box
       sx={{
         width: "100%",
-        margin: "135px 0",
+        margin: "135px 0 100px 0",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -68,7 +68,7 @@ const HowWeWork = () => {
               sx={{
                 borderRadius: "100%",
                 padding: "25px 30px",
-                boxShadow: "3px 7px 27px -8px",
+                boxShadow: "3px 7px 27px -17px",
                 width: "100px",
                 height: "100px",
                 marginTop: "-50px",
