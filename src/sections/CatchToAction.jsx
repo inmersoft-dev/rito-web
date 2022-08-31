@@ -12,7 +12,7 @@ const CatchToAction = () => {
     <Box
       sx={{
         width: "100%",
-        padding: { md: "50px 15rem", lg: "50px 20rem" },
+        padding: { xs: "40px", md: "50px 15rem", lg: "50px 20rem" },
         height: "70vh",
         display: "flex",
         flexDirection: "column",
@@ -22,7 +22,7 @@ const CatchToAction = () => {
     >
       <Typography
         variant="subtitle1"
-        sx={{ color: theme.palette.primary.dark }}
+        sx={{ textAlign: "center", color: theme.palette.primary.dark }}
       >
         {languageState.texts.About.CatchToAction.SmallTitle}
       </Typography>
@@ -31,6 +31,7 @@ const CatchToAction = () => {
         sx={{
           margin: "40px 0",
           fontWeight: "400",
+          fontSize: { xs: "1.65rem !important", md: "initial" },
           textAlign: "center",
           color: theme.palette.primary.dark,
         }}
