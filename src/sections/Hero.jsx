@@ -18,7 +18,7 @@ const Hero = () => {
         backgroundSize: "cover",
         height: "100vh",
         width: "100%",
-        paddingLeft: { lg: "12rem", md: "10rem", xs: "40px" },
+        paddingLeft: { lg: "12rem", md: "5rem", xs: "40px" },
         display: "flex",
         flexDirection: "column",
         alignItems: "flex-start",

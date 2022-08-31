@@ -23,7 +23,7 @@ const About = () => {
       sx={{
         width: "100%",
         padding: "100px 60px 100px 0",
-        paddingLeft: { lg: "12rem", md: "10rem", xs: "40px" },
+        paddingLeft: { lg: "12rem", md: "5rem", xs: "40px" },
         display: "flex",
         position: "relative",
       }}

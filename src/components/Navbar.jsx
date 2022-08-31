@@ -34,7 +34,7 @@ const Navbar = () => {
       sx={{
         background: "#fff",
         padding: "40px 60px 40px 0",
-        paddingLeft: { lg: "12rem", md: "10rem", xs: "5rem" },
+        paddingLeft: { lg: "12rem", md: "5rem", xs: "40px" },
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
@@ -46,7 +46,7 @@ const Navbar = () => {
         alt="logo"
         sx={{ width: "130px", height: "55px" }}
       />
-      <SitoContainer alignItems="center">
+      <Box sx={{ display: { xs: "none", lg: "flex" }, alignItems: "center" }}>
         {Object.values(languageState.texts.Links).map((item) => (
           <Link
             href={item.To}
@@ -68,7 +68,7 @@ const Navbar = () => {
             {item.Label}
           </Link>
         ))}
-      </SitoContainer>
+      </Box>
     </Box>
   );
 };
