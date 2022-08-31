@@ -18,7 +18,7 @@ const Hero = () => {
         backgroundSize: "cover",
         height: "100vh",
         width: "100%",
-        paddingLeft: { lg: "12rem", md: "10rem", xs: "5rem" },
+        paddingLeft: { lg: "12rem", md: "10rem", xs: "40px" },
         display: "flex",
         flexDirection: "column",
         alignItems: "flex-start",
@@ -45,7 +45,7 @@ const Hero = () => {
         variant="subtitle1"
         sx={{
           color: theme.palette.primary.dark,
-          width: "50%",
+          width: { xs: "100%", md: "50%" },
           lineHeight: "1.25",
         }}
       >

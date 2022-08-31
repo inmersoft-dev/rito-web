@@ -22,15 +22,20 @@ const About = () => {
     <Box
       sx={{
         width: "100%",
-        padding: "40px 60px 40px 0",
-        paddingLeft: { lg: "12rem", md: "10rem", xs: "5rem" },
+        padding: "100px 60px 100px 0",
+        paddingLeft: { lg: "12rem", md: "10rem", xs: "40px" },
         display: "flex",
         position: "relative",
       }}
     >
       <Box
         className="float-radial"
-        sx={{ width: "150px", height: "90px", left: -100, top: "50%" }}
+        sx={{
+          width: "150px",
+          height: "90px",
+          left: -100,
+          top: "50%",
+        }}
       >
         <SitoImage
           src={Bubble}
@@ -40,7 +45,12 @@ const About = () => {
       </Box>
       <Box
         className="float-y"
-        sx={{ width: "360px", height: "234px", right: 0 }}
+        sx={{
+          display: { xs: "none", md: "initial" },
+          width: "360px",
+          height: "234px",
+          right: 0,
+        }}
       >
         <SitoImage
           src={Bubble}
@@ -71,7 +81,7 @@ const About = () => {
       </Box>
       <Box
         sx={{
-          width: { md: "60%", lg: "50%" },
+          width: { xs: "100%", sm: "90%", md: "600px" },
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
@@ -94,7 +104,13 @@ const About = () => {
         >
           {languageState.texts.About.BigTitle}
         </Typography>
-        <SitoContainer flexDirection="column" sx={{ marginLeft: "-30px" }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            marginLeft: { xs: "-10px", md: "-30px" },
+          }}
+        >
           {languageState.texts.About.List.map((item) => (
             <SitoContainer flexDirection="column" sx={{ marginTop: "30px" }}>
               <SitoContainer alignItems="center">
@@ -128,7 +144,7 @@ const About = () => {
               </Typography>
             </SitoContainer>
           ))}
-        </SitoContainer>
+        </Box>
       </Box>
     </Box>
   );
