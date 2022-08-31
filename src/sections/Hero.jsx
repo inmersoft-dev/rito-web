@@ -45,7 +45,7 @@ const Hero = () => {
         variant="subtitle1"
         sx={{
           color: theme.palette.primary.dark,
-          width: { xs: "100%", md: "50%" },
+          width: { xs: "100%", md: "50%", sm: "70%" },
           lineHeight: "1.25",
         }}
       >

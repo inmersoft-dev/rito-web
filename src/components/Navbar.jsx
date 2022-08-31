@@ -2,7 +2,6 @@
 import { useTheme, Box, Link } from "@mui/material";
 
 // sito components
-import SitoContainer from "sito-container";
 import SitoImage from "sito-image";
 
 // utils
