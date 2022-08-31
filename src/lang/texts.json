@@ -45,11 +45,52 @@
           "Title": "Servicio",
           "Description": "Evaluamos de manera permanente nuestra relación comercial con clientes y consumidores finales a través de nuestros centros de servicio, de atención telefónica y redes sociales"
         }
-      ],
+      ]
+    },
+    "Buy": {
       "CatchToAction": {
         "SmallTitle": "Suministro constante de hielo y agua",
         "BigTitle": "Ordena entrega de agua diaria, semanal o mensual",
         "Button": "Obtener agua"
+      },
+      "HowWeWork": {
+        "BigTitle": "¿Cómo lo hacemos?",
+        "SmallTitle": "distintos tipos de filtros",
+        "List": [
+          {
+            "Title": "Filtro de Sedimientos:",
+            "Description": "Remueve los sólidos suspendidos en el agua, atrapa partículas relativamente grandes como tierra, arena, limo y partículas orgánicas o inorgánicas."
+          },
+          {
+            "Title": "Filtro de Sedimientos:",
+            "Description": "Remueve los sólidos suspendidos en el agua, atrapa partículas relativamente grandes como tierra, arena, limo y partículas orgánicas o inorgánicas."
+          },
+          {
+            "Title": "Filtro de Sedimientos:",
+            "Description": "Remueve los sólidos suspendidos en el agua, atrapa partículas relativamente grandes como tierra, arena, limo y partículas orgánicas o inorgánicas."
+          }
+        ]
+      },
+      "Process": {
+        "BigTitle": "Procesos",
+        "List": [
+          {
+            "Title": "Filtrado",
+            "Description": "El proceso por el cual el agua pasa a través de filtros de sedimentos, carbón activado, un filtro suavizador y uno pulidor."
+          },
+          {
+            "Title": "Luz Ultravioleta",
+            "Description": "El proceso por el cual el agua pasa a través de filtros de sedimentos, carbón activado, un filtro suavizador y uno pulidor."
+          },
+          {
+            "Title": "Filtrado",
+            "Description": "El proceso por el cual el agua pasa a través de filtros de sedimentos, carbón activado, un filtro suavizador y uno pulidor."
+          },
+          {
+            "Title": "Luz Ultravioleta",
+            "Description": "El proceso por el cual el agua pasa a través de filtros de sedimentos, carbón activado, un filtro suavizador y uno pulidor."
+          }
+        ]
       }
     }
   }

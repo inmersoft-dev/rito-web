@@ -114,7 +114,11 @@ const About = () => {
           }}
         >
           {languageState.texts.About.List.map((item) => (
-            <SitoContainer flexDirection="column" sx={{ marginTop: "30px" }}>
+            <SitoContainer
+              key={item.Title}
+              flexDirection="column"
+              sx={{ marginTop: "30px" }}
+            >
               <SitoContainer alignItems="center">
                 <Circle
                   color="primary"

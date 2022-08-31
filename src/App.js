@@ -14,7 +14,6 @@ import Footer from "./components/Footer";
 // sections
 import Hero from "./sections/Hero";
 import About from "./sections/About";
-import CatchToAction from "./sections/CatchToAction";
 import Buy from "./sections/Buy";
 import Contact from "./sections/Contact";
 
@@ -28,7 +27,6 @@ function App() {
         <Navbar />
         <Hero />
         <About />
-        <CatchToAction />
         <Buy />
         <Contact />
         <Footer />
