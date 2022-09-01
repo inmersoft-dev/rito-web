@@ -21,7 +21,8 @@ const Footer = () => {
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "space-between",
-        padding: "40px 0 40px 0",
+        padding: "30px 0 0 0",
+        paddingBottom: { xs: "40px", md: 0 },
         paddingRight: { xs: "40px" },
         paddingLeft: { lg: "12rem", md: "5rem", xs: "40px" },
         background: theme.palette.primary.main,
@@ -89,7 +90,10 @@ const Footer = () => {
           <LinkedIn />
         </Link>
       </SitoContainer>
-      <SitoContainer alignItems="center" sx={{ height: "100%" }}>
+      <SitoContainer
+        alignItems="center"
+        sx={{ height: "100%", marginTop: "5px" }}
+      >
         <Typography>{languageState.texts.Footer.Text}</Typography>
       </SitoContainer>
     </Box>

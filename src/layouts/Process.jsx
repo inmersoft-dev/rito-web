@@ -52,8 +52,8 @@ const Process = () => {
         extraAnimation="float-y"
         width="150px"
         height="90px"
-        right="0"
-        top="50px"
+        right="20px"
+        top="10px"
       />
       <Bubble
         animation="float-y"
