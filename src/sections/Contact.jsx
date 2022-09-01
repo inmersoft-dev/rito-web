@@ -54,8 +54,6 @@ const Contact = () => {
       id="contact"
       sx={{
         width: "100%",
-        padding: "100px 40px 100px 0",
-        paddingLeft: { lg: "12rem", md: "5rem", xs: "40px" },
         display: "flex",
         flexDirection: "column",
         position: "relative",
@@ -85,7 +83,7 @@ const Contact = () => {
         filter="blur(4px)"
       />
       {/* main section */}
-      <Box sx={{ display: { xs: "block", md: "flex" } }}>
+      <Box sx={{ display: { xs: "block", md: "flex" }, zIndex: 1 }}>
         <Box
           sx={{
             width: "100%",
@@ -93,6 +91,8 @@ const Contact = () => {
             flexDirection: "column",
             alignItems: "flex-start",
             justifyContent: "center",
+            padding: { xs: "100px 0 0 0", md: "100px 0 100px 0" },
+            paddingLeft: { lg: "12rem", md: "5rem", sm: "40px", xs: "20px" },
           }}
         >
           <Motion delay={0.2}>
@@ -164,7 +164,11 @@ const Contact = () => {
         </Box>
         <Box
           component="form"
-          sx={{ width: "100%", zIndex: 10 }}
+          sx={{
+            width: "100%",
+            zIndex: 10,
+            padding: "100px 20px 100px 20px",
+          }}
           onSubmit={handleSubmit(onSubmit)}
         >
           <Motion delay={0.2}>

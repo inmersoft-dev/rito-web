@@ -22,7 +22,12 @@ const CatchToAction = () => {
         backgroundRepeat: { xs: "no-repeat", lg: "repeat" },
         backgroundSize: { xs: "175%", md: "contain" },
         width: "100%",
-        padding: { xs: "40px", md: "50px 15rem", lg: "50px 20rem" },
+        padding: {
+          xs: "40px 20px 40px 20px",
+          sm: "40px",
+          md: "50px 15rem",
+          lg: "50px 20rem",
+        },
         height: "70vh",
         display: "flex",
         flexDirection: "column",

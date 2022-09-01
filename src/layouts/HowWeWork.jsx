@@ -75,7 +75,6 @@ const HowWeWork = () => {
                 height: " 400px",
                 marginTop: "100px",
                 marginRight: { xs: 0, md: "40px" },
-                marginLeft: { xs: "-20px", md: 0 },
                 borderRadius: "1rem",
                 background: theme.palette.background.paper,
                 boxShadow: "3px 15px 27px -28px",

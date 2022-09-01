@@ -61,6 +61,7 @@ const Process = () => {
         height="234px"
         left="-100px"
         top="50%"
+        display={{ xs: "none", md: "block" }}
       />
       <Bubble
         animation="float-y"
@@ -94,14 +95,15 @@ const Process = () => {
       >
         {languageState.texts.Buy.Process.List.map((item, i) => (
           <Motion key={i} delay={getDelay(i)}>
-            <SitoContainer
-              flexDirection="column"
-              alignItems="center"
+            <Box
               sx={{
-                padding: "0 30px",
-                width: "450px",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                padding: { xs: "0 15px", md: "0 30px" },
+                width: { xs: "300px", md: "450px" },
                 height: "450px",
-                marginRight: "40px",
+                marginRight: { xs: 0, md: "40px" },
                 borderRadius: "1rem",
               }}
             >
@@ -131,7 +133,7 @@ const Process = () => {
               <Typography sx={{ textAlign: "center" }}>
                 {item.Description}
               </Typography>
-            </SitoContainer>
+            </Box>
           </Motion>
         ))}
       </Box>
