@@ -6,7 +6,6 @@ import { Circle } from "@mui/icons-material";
 
 // sito components
 import SitoContainer from "sito-container";
-import SitoImage from "sito-image";
 
 // own components
 import Motion from "../components/Motion";
@@ -18,6 +17,16 @@ import { useLanguage } from "../context/LanguageProvider";
 const Contact = () => {
   const theme = useTheme();
   const { languageState } = useLanguage();
+
+  const getDelay = (i) => {
+    let j = 0.4;
+    let k = 0;
+    while (k < i) {
+      j += 0.2;
+      k += 1;
+    }
+    return j;
+  };
 
   return (
     <Box
@@ -64,22 +73,26 @@ const Contact = () => {
             justifyContent: "center",
           }}
         >
-          <Typography
-            variant="subtitle1"
-            sx={{ color: theme.palette.primary.dark }}
-          >
-            {languageState.texts.Contact.SmallTitle}
-          </Typography>
-          <Typography
-            variant="h3"
-            sx={{
-              margin: "40px 0",
-              fontWeight: "400",
-              color: theme.palette.primary.main,
-            }}
-          >
-            {languageState.texts.Contact.BigTitle}
-          </Typography>
+          <Motion delay={0.2}>
+            <Typography
+              variant="subtitle1"
+              sx={{ color: theme.palette.primary.dark }}
+            >
+              {languageState.texts.Contact.SmallTitle}
+            </Typography>
+          </Motion>
+          <Motion delay={0.4}>
+            <Typography
+              variant="h3"
+              sx={{
+                margin: "40px 0",
+                fontWeight: "400",
+                color: theme.palette.primary.main,
+              }}
+            >
+              {languageState.texts.Contact.BigTitle}
+            </Typography>
+          </Motion>
           <Box
             sx={{
               display: "flex",
@@ -87,42 +100,43 @@ const Contact = () => {
               marginLeft: { xs: "-10px", md: "-30px" },
             }}
           >
-            {languageState.texts.Contact.List.map((item) => (
-              <SitoContainer
-                key={item.Title}
-                flexDirection="column"
-                sx={{ marginTop: "30px" }}
-              >
-                <SitoContainer alignItems="center">
-                  <Circle
-                    color="primary"
-                    sx={{
-                      fontSize: "16px",
-                      marginTop: "-2px",
-                      marginRight: "20px",
-                    }}
-                  />
+            {languageState.texts.Contact.List.map((item, i) => (
+              <Motion key={item.Title} delay={getDelay(i)}>
+                <SitoContainer
+                  flexDirection="column"
+                  sx={{ marginTop: "30px" }}
+                >
+                  <SitoContainer alignItems="center">
+                    <Circle
+                      color="primary"
+                      sx={{
+                        fontSize: "16px",
+                        marginTop: "-2px",
+                        marginRight: "20px",
+                      }}
+                    />
+                    <Typography
+                      sx={{
+                        color: theme.palette.primary.dark,
+                        fontSize: "18px",
+                        fontWeight: 500,
+                      }}
+                    >
+                      {item.Title}
+                    </Typography>
+                  </SitoContainer>
                   <Typography
+                    variant="body1"
                     sx={{
+                      marginLeft: "37px",
                       color: theme.palette.primary.dark,
-                      fontSize: "18px",
-                      fontWeight: 500,
+                      marginTop: "20px",
                     }}
                   >
-                    {item.Title}
+                    {item.Description}
                   </Typography>
                 </SitoContainer>
-                <Typography
-                  variant="body1"
-                  sx={{
-                    marginLeft: "37px",
-                    color: theme.palette.primary.dark,
-                    marginTop: "20px",
-                  }}
-                >
-                  {item.Description}
-                </Typography>
-              </SitoContainer>
+              </Motion>
             ))}
           </Box>
         </Box>

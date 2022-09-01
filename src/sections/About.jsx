@@ -46,7 +46,13 @@ const About = () => {
         left="-100px"
         top="50%"
       />
-      <Bubble animation="float-y" width="360px" height="234px" right="0" />
+      <Bubble
+        animation="float-y"
+        width="360px"
+        height="234px"
+        right="0"
+        display={{ xs: "none", md: "initial" }}
+      />
       <Bubble
         animation="float-y"
         width="250px"
