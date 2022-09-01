@@ -6,17 +6,27 @@ import { Circle } from "@mui/icons-material";
 
 // sito components
 import SitoContainer from "sito-container";
-import SitoImage from "sito-image";
+
+// own components
+import Motion from "../components/Motion";
+import Bubble from "../components/Bubble";
 
 // contexts
 import { useLanguage } from "../context/LanguageProvider";
 
-// images
-import Bubble from "../assets/images/bubble.png";
-
 const About = () => {
   const theme = useTheme();
   const { languageState } = useLanguage();
+
+  const getDelay = (i) => {
+    let j = 0.4;
+    let k = 0;
+    while (k < i) {
+      j += 0.2;
+      k += 1;
+    }
+    return j;
+  };
 
   return (
     <Box
@@ -29,57 +39,23 @@ const About = () => {
         position: "relative",
       }}
     >
-      <Box
-        className="float-radial"
-        sx={{
-          width: "150px",
-          height: "90px",
-          left: -100,
-          top: "50%",
-        }}
-      >
-        <SitoImage
-          src={Bubble}
-          alt="bubble"
-          sx={{ objectFit: "contain", width: "100%", height: "100%" }}
-        />
-      </Box>
-      <Box
-        className="float-y"
-        sx={{
-          display: { xs: "none", md: "initial" },
-          width: "360px",
-          height: "234px",
-          right: 0,
-        }}
-      >
-        <SitoImage
-          src={Bubble}
-          alt="bubble"
-          sx={{ objectFit: "contain", width: "100%", height: "100%" }}
-        />
-      </Box>
-      <Box
-        className="float-y"
-        sx={{
-          width: "250px",
-          height: "160px",
-          right: "20%",
-          top: "90%",
-          transform: "rotate(45deg)",
-        }}
-      >
-        <SitoImage
-          src={Bubble}
-          alt="bubble"
-          sx={{
-            objectFit: "contain",
-            width: "100%",
-            height: "100%",
-            filter: "blur(4px)",
-          }}
-        />
-      </Box>
+      <Bubble
+        animation="float-radial"
+        width="150px"
+        height="90px"
+        left="-100px"
+        top="50%"
+      />
+      <Bubble animation="float-y" width="360px" height="234px" right="0" />
+      <Bubble
+        animation="float-y"
+        width="250px"
+        height="160px"
+        right="20%"
+        top="90%"
+        transform="rotate(45deg)"
+        filter="blur(4px)"
+      />
       {/* main section */}
       <Box
         sx={{
@@ -90,22 +66,26 @@ const About = () => {
           justifyContent: "center",
         }}
       >
-        <Typography
-          variant="subtitle1"
-          sx={{ color: theme.palette.primary.dark }}
-        >
-          {languageState.texts.About.SmallTitle}
-        </Typography>
-        <Typography
-          variant="h3"
-          sx={{
-            margin: "40px 0",
-            fontWeight: "400",
-            color: theme.palette.primary.main,
-          }}
-        >
-          {languageState.texts.About.BigTitle}
-        </Typography>
+        <Motion delay={0.2}>
+          <Typography
+            variant="subtitle1"
+            sx={{ color: theme.palette.primary.dark }}
+          >
+            {languageState.texts.About.SmallTitle}
+          </Typography>
+        </Motion>
+        <Motion delay={0.4}>
+          <Typography
+            variant="h3"
+            sx={{
+              margin: "40px 0",
+              fontWeight: "400",
+              color: theme.palette.primary.main,
+            }}
+          >
+            {languageState.texts.About.BigTitle}
+          </Typography>
+        </Motion>
         <Box
           sx={{
             display: "flex",
@@ -113,42 +93,40 @@ const About = () => {
             marginLeft: { xs: "-10px", md: "-30px" },
           }}
         >
-          {languageState.texts.About.List.map((item) => (
-            <SitoContainer
-              key={item.Title}
-              flexDirection="column"
-              sx={{ marginTop: "30px" }}
-            >
-              <SitoContainer alignItems="center">
-                <Circle
-                  color="primary"
-                  sx={{
-                    fontSize: "16px",
-                    marginTop: "-2px",
-                    marginRight: "20px",
-                  }}
-                />
+          {languageState.texts.About.List.map((item, i) => (
+            <Motion delay={getDelay(i)} key={item.Title}>
+              <SitoContainer flexDirection="column" sx={{ marginTop: "30px" }}>
+                <SitoContainer alignItems="center">
+                  <Circle
+                    color="primary"
+                    sx={{
+                      fontSize: "16px",
+                      marginTop: "-2px",
+                      marginRight: "20px",
+                    }}
+                  />
+                  <Typography
+                    sx={{
+                      color: theme.palette.primary.dark,
+                      fontSize: "18px",
+                      fontWeight: 500,
+                    }}
+                  >
+                    {item.Title}
+                  </Typography>
+                </SitoContainer>
                 <Typography
+                  variant="body1"
                   sx={{
+                    marginLeft: "37px",
                     color: theme.palette.primary.dark,
-                    fontSize: "18px",
-                    fontWeight: 500,
+                    marginTop: "20px",
                   }}
                 >
-                  {item.Title}
+                  {item.Description}
                 </Typography>
               </SitoContainer>
-              <Typography
-                variant="body1"
-                sx={{
-                  marginLeft: "37px",
-                  color: theme.palette.primary.dark,
-                  marginTop: "20px",
-                }}
-              >
-                {item.Description}
-              </Typography>
-            </SitoContainer>
+            </Motion>
           ))}
         </Box>
       </Box>
