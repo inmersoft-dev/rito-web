@@ -2,24 +2,91 @@
 import SitoContainer from "sito-container";
 
 // @mui components
-import { Box, Link } from "@mui/material";
+import { useTheme, Box, Link, Typography } from "@mui/material";
 
 // @mui icons
 import { Facebook, Twitter, LinkedIn } from "@mui/icons-material";
 
+// contexts
+import { useLanguage } from "../context/LanguageProvider";
+
 const Footer = () => {
+  const theme = useTheme();
+  const { languageState } = useLanguage();
+
   return (
-    <Box sx={{ display: "flex", width: "100%", height: "60px" }}>
-      <SitoContainer>
-        <Link href="https://facebook.com">
+    <Box
+      sx={{
+        zIndex: 1,
+        display: "flex",
+        justifyContent: "space-between",
+        height: "60px",
+        padding: "60px 40px 40px 0",
+        paddingLeft: { lg: "12rem", md: "5rem", xs: "40px" },
+        background: theme.palette.primary.main,
+      }}
+    >
+      <SitoContainer alignItems="center" sx={{ height: "100%" }}>
+        <Link
+          href="https://facebook.com"
+          sx={{
+            marginRight: "20px",
+            borderRadius: "100%",
+            background: "#fff",
+            width: "35px",
+            height: "35px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            transition: "all 500ms ease",
+            "&:hover": {
+              transform: "translateY(-10px)",
+            },
+          }}
+        >
           <Facebook />
         </Link>
-        <Link href="https://twitter.com">
+        <Link
+          href="https://twitter.com"
+          sx={{
+            marginRight: "20px",
+            borderRadius: "100%",
+            background: "#fff",
+            width: "35px",
+            height: "35px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            transition: "all 500ms ease",
+            "&:hover": {
+              transform: "translateY(-10px)",
+            },
+          }}
+        >
           <Twitter />
         </Link>
-        <Link href="https://linkedin.com">
+        <Link
+          href="https://linkedin.com"
+          sx={{
+            marginRight: "20px",
+            borderRadius: "100%",
+            background: "#fff",
+            width: "35px",
+            height: "35px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            transition: "all 500ms ease",
+            "&:hover": {
+              transform: "translateY(-10px)",
+            },
+          }}
+        >
           <LinkedIn />
         </Link>
+      </SitoContainer>
+      <SitoContainer alignItems="center" sx={{ height: "100%" }}>
+        <Typography>{languageState.texts.Footer.Text}</Typography>
       </SitoContainer>
     </Box>
   );

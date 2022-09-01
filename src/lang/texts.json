@@ -23,6 +23,9 @@
         "Pretty": true
       }
     },
+    "Footer": {
+      "Text": "Copyright © Agua Plus | Powered by Agua Plus"
+    },
     "Hero": {
       "SmallTitle": "Agua purificada y ozonificada",
       "BigTitle": "Tome el agua de mejor calidad",
