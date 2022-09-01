@@ -114,16 +114,16 @@
         "Description": "Queremos establecer una relación a largo plazo contigo, pues una vez que consumas nuestra agua no vas a querer consumir otra. La mejor en precio y calidad.",
         "Inputs": {
           "Name": {
-            "Label": "Nombre *",
+            "Label": "Nombre",
             "Placeholder": "ej: José Julio Rogríduez"
           },
           "Email": {
-            "Label": "Email *",
+            "Label": "Email",
             "Placeholder": "ej: josejulio@gmail.com"
           },
-          "Phone": { "Label": "Teléfono *", "Placeholder": "+55 55 55 55" },
+          "Phone": { "Label": "Teléfono", "Placeholder": "+55 55 55 55" },
           "Message": {
-            "Label": "Mensaje *",
+            "Label": "Mensaje",
             "Placeholder": "Escribe tu mensaje aquí"
           }
         }
