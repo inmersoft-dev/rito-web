@@ -39,7 +39,7 @@ const HowWeWork = () => {
         <Typography
           variant="h3"
           sx={{
-            margin: "40px 0 20px 0",
+            margin: { xs: 0, md: "40px 0 20px 0" },
             fontWeight: "400",
             textAlign: "center",
             color: theme.palette.primary.dark,
@@ -65,15 +65,17 @@ const HowWeWork = () => {
       >
         {languageState.texts.Buy.HowWeWork.List.map((item, i) => (
           <Motion key={i} delay={getDelay(i)}>
-            <SitoContainer
-              flexDirection="column"
-              alignItems="center"
+            <Box
               sx={{
-                padding: "0 30px",
-                width: "350px",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                padding: { xs: "0 15px", md: "0 30px" },
+                width: { xs: "300px", md: "350px" },
                 height: " 400px",
                 marginTop: "100px",
-                marginRight: "40px",
+                marginRight: { xs: 0, md: "40px" },
+                marginLeft: { xs: "-20px", md: 0 },
                 borderRadius: "1rem",
                 background: theme.palette.background.paper,
                 boxShadow: "3px 15px 27px -28px",
@@ -110,7 +112,7 @@ const HowWeWork = () => {
               <Typography sx={{ textAlign: "center" }}>
                 {item.Description}
               </Typography>
-            </SitoContainer>
+            </Box>
           </Motion>
         ))}
       </Box>
