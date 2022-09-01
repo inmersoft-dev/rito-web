@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 // @mui components
 import { useTheme, Box, Link, IconButton } from "@mui/material";
 
@@ -7,6 +9,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 // sito components
 import SitoContainer from "sito-container";
 import SitoImage from "sito-image";
+
+// own components
+import Drawer from "./Drawer";
 
 // contexts
 import { useLanguage } from "../context/LanguageProvider";
@@ -29,6 +34,8 @@ const Navbar = () => {
     },
   };
 
+  const [showDrawer, setShowDrawer] = useState(false);
+
   return (
     <Box
       sx={{
@@ -41,10 +48,13 @@ const Navbar = () => {
         alignItems: "center",
       }}
     >
+      <Drawer open={showDrawer} onClose={() => setShowDrawer(false)} />
       <SitoContainer alignItems="center" justifyContent="flex-start">
         <IconButton
+          onClick={() => setShowDrawer(true)}
           color="primary"
           sx={{
+            paddingLeft: 0,
             display: { lg: "none" },
             marginRight: "20px",
             width: "60px",

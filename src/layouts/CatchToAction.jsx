@@ -20,7 +20,7 @@ const CatchToAction = () => {
       sx={{
         background: `url(${Catch})`,
         backgroundRepeat: { xs: "no-repeat", sm: "repeat" },
-        backgroundSize: { xs: "175%", md: "contain" },
+        backgroundSize: { xs: "175%", sm: "contain" },
         width: "100%",
         padding: {
           xs: "40px",
