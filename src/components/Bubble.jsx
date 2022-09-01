@@ -7,7 +7,7 @@ import SitoImage from "sito-image";
 import { Box } from "@mui/material";
 
 // images
-import BubbleIMG from "../assets/images/bubble.png";
+import BubbleIMG from "../assets/images/bubble.webp";
 
 const Bubble = (props) => {
   const {

@@ -16,7 +16,7 @@ import SitoImage from "sito-image";
 import { useLanguage } from "../context/LanguageProvider";
 
 // images
-import Logo from "../assets/images/logo.png";
+import Logo from "../assets/images/logo.webp";
 
 const Drawer = (props) => {
   const { open, onClose } = props;
@@ -38,7 +38,6 @@ const Drawer = (props) => {
   };
 
   useEffect(() => {
-    console.log(open);
     if (open) setVisible(true);
   }, [open]);
 

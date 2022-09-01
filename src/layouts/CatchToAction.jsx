@@ -8,7 +8,7 @@ import Motion from "../components/Motion";
 import { useLanguage } from "../context/LanguageProvider";
 
 // images
-import Catch from "../assets/images/catch.png";
+import Catch from "../assets/images/catch.webp";
 
 const CatchToAction = () => {
   const theme = useTheme();

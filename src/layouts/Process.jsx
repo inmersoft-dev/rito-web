@@ -13,10 +13,10 @@ import Bubble from "../components/Bubble";
 import { useLanguage } from "../context/LanguageProvider";
 
 // images
-import feature1 from "../assets/images/8.png";
-import feature2 from "../assets/images/9.png";
-import feature3 from "../assets/images/10.png";
-import feature4 from "../assets/images/11.png";
+import feature1 from "../assets/images/8.webp";
+import feature2 from "../assets/images/9.webp";
+import feature3 from "../assets/images/10.webp";
+import feature4 from "../assets/images/11.webp";
 
 const Process = () => {
   const theme = useTheme();

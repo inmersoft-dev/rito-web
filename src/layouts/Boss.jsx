@@ -9,7 +9,7 @@ import SitoImage from "sito-image";
 import Motion from "../components/Motion";
 
 // images
-import boss from "../assets/images/boss.png";
+import boss from "../assets/images/boss.webp";
 import noPhoto from "../assets/images/no-photo.webp";
 
 // contexts

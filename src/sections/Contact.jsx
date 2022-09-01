@@ -169,8 +169,8 @@ const Contact = () => {
             width: "100%",
             zIndex: 10,
             padding: { xs: "100px 0 100px 0", md: "100px 0 100px 0" },
-            paddingRight: { xs: "20px", sm: "40px" },
-            paddingLeft: { xs: "20px", md: 0 },
+            paddingRight: { xs: "20px !important", sm: "60px !important" },
+            paddingLeft: { xs: "20px !important", md: 0 },
           }}
           onSubmit={handleSubmit(onSubmit)}
         >

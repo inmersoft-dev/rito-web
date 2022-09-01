@@ -17,7 +17,7 @@ import Drawer from "./Drawer";
 import { useLanguage } from "../context/LanguageProvider";
 
 // images
-import Logo from "../assets/images/logo.png";
+import Logo from "../assets/images/logo.webp";
 
 const Navbar = () => {
   const theme = useTheme();

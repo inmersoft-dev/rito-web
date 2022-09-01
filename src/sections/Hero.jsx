@@ -5,7 +5,7 @@ import { useTheme, Box, Link, Button, Typography } from "@mui/material";
 import Motion from "../components/Motion";
 
 // image
-import hero from "../assets/images/hero.png";
+import hero from "../assets/images/hero.webp";
 
 // contexts
 import { useLanguage } from "../context/LanguageProvider";
