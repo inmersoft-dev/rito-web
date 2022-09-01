@@ -1,20 +1,24 @@
 {
   "files": {
     "main.css": "/rito-web/static/css/main.f2d5dc1e.css",
-    "main.js": "/rito-web/static/js/main.07908842.js",
-    "static/media/hero.png": "/rito-web/static/media/hero.f04a26945675ef108d4c.png",
-    "static/media/boss.png": "/rito-web/static/media/boss.e5bb269558812be3aa72.png",
-    "static/media/catch.png": "/rito-web/static/media/catch.4573f7c681a223d41530.png",
-    "static/media/bubble.png": "/rito-web/static/media/bubble.0f620232289b99c4035c.png",
-    "static/media/logo.png": "/rito-web/static/media/logo.95d6466c7838eff253c0.png",
+    "main.js": "/rito-web/static/js/main.7e92fa3c.js",
+    "static/media/hero.webp": "/rito-web/static/media/hero.b1aa53eee0fcc07fd618.webp",
+    "static/media/catch.webp": "/rito-web/static/media/catch.13d52087ec4870e57973.webp",
+    "static/media/boss.webp": "/rito-web/static/media/boss.e78854a27c66c9163ca4.webp",
+    "static/media/bubble.webp": "/rito-web/static/media/bubble.3acf9e63d7513f7f7d6a.webp",
+    "static/media/logo.webp": "/rito-web/static/media/logo.0663147396f3a2ad01e9.webp",
     "static/media/no-photo.webp": "/rito-web/static/media/no-photo.9999920b9e6c6830ebc4.webp",
+    "static/media/9.webp": "/rito-web/static/media/9.11cd24d5c9211d101fb2.webp",
+    "static/media/8.webp": "/rito-web/static/media/8.df23c969642cceda0d5c.webp",
     "static/media/crash.webp": "/rito-web/static/media/crash.f32dbcba5a7808f8e8da.webp",
+    "static/media/10.webp": "/rito-web/static/media/10.faa06a845e3776df5b0c.webp",
+    "static/media/11.webp": "/rito-web/static/media/11.0afc4afde81c646f0fbe.webp",
     "index.html": "/rito-web/index.html",
     "main.f2d5dc1e.css.map": "/rito-web/static/css/main.f2d5dc1e.css.map",
-    "main.07908842.js.map": "/rito-web/static/js/main.07908842.js.map"
+    "main.7e92fa3c.js.map": "/rito-web/static/js/main.7e92fa3c.js.map"
   },
   "entrypoints": [
     "static/css/main.f2d5dc1e.css",
-    "static/js/main.07908842.js"
+    "static/js/main.7e92fa3c.js"
   ]
 }
