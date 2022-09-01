@@ -4,9 +4,6 @@ import { useTheme, Box, Link } from "@mui/material";
 // sito components
 import SitoImage from "sito-image";
 
-// utils
-import { scrollTo } from "../utils/functions";
-
 // contexts
 import { useLanguage } from "../context/LanguageProvider";
 

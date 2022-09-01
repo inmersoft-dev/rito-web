@@ -16,6 +16,7 @@ const CatchToAction = () => {
 
   return (
     <Box
+      id="buy"
       sx={{
         background: `url(${Catch})`,
         backgroundSize: "contain",

@@ -51,6 +51,7 @@ const Contact = () => {
 
   return (
     <Box
+      id="contact"
       sx={{
         width: "100%",
         padding: "100px 40px 100px 0",
@@ -84,7 +85,7 @@ const Contact = () => {
         filter="blur(4px)"
       />
       {/* main section */}
-      <Box sx={{ display: "flex" }}>
+      <Box sx={{ display: { xs: "block", md: "flex" } }}>
         <Box
           sx={{
             width: "100%",
