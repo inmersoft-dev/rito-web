@@ -30,6 +30,7 @@ const About = () => {
 
   return (
     <Box
+      id="about"
       sx={{
         width: "100%",
         padding: "100px 40px 100px 0",

@@ -1,5 +1,5 @@
 // @mui components
-import { useTheme, Box, Button, Typography } from "@mui/material";
+import { useTheme, Box, Link, Button, Typography } from "@mui/material";
 
 // own components
 import Motion from "../components/Motion";
@@ -16,6 +16,7 @@ const Hero = () => {
 
   return (
     <Box
+      id="home"
       sx={{
         backgroundImage: `url(${hero})`,
         backgroundSize: "cover",
@@ -62,24 +63,26 @@ const Hero = () => {
         </Typography>
       </Motion>
       <Motion delay={0.8}>
-        <Button
-          sx={{
-            marginTop: "60px",
-            border: `2px solid #fff`,
-            color: "#fff",
-            padding: "9px 35px",
-            borderRadius: "28.76px",
-            background: theme.palette.primary.main,
-            fontSize: "16px",
-            textTransform: "Capitalize",
-            "&:hover": {
-              color: theme.palette.primary.dark,
-              background: "#fff",
-            },
-          }}
-        >
-          {languageState.texts.Hero.Button}
-        </Button>
+        <Link href="#buy" underline="none">
+          <Button
+            sx={{
+              marginTop: "60px",
+              border: `2px solid #fff`,
+              color: "#fff",
+              padding: "9px 35px",
+              borderRadius: "28.76px",
+              background: theme.palette.primary.main,
+              fontSize: "16px",
+              textTransform: "Capitalize",
+              "&:hover": {
+                color: theme.palette.primary.dark,
+                background: "#fff",
+              },
+            }}
+          >
+            {languageState.texts.Hero.Button}
+          </Button>
+        </Link>
       </Motion>
     </Box>
   );
