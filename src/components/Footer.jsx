@@ -19,14 +19,17 @@ const Footer = () => {
       sx={{
         zIndex: 1,
         display: "flex",
+        flexWrap: "wrap",
         justifyContent: "space-between",
-        height: "60px",
-        padding: "60px 40px 40px 0",
+        padding: "40px 40px 0px 0",
         paddingLeft: { lg: "12rem", md: "5rem", xs: "40px" },
         background: theme.palette.primary.main,
       }}
     >
-      <SitoContainer alignItems="center" sx={{ height: "100%" }}>
+      <SitoContainer
+        alignItems="center"
+        sx={{ height: "100%", marginBottom: "20px" }}
+      >
         <Link
           href="https://facebook.com"
           sx={{
