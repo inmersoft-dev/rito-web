@@ -1,7 +1,8 @@
 {
   "name": "rito-page",
   "version": "0.3.11",
-  "private": true,
+  "private": false,
+  "homepage": "https://inmersoft-dev.github.io/rito-page",
   "dependencies": {
     "@emotion/css": "^11.10.0",
     "framer-motion": "^7.2.1",
