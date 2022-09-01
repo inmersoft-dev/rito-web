@@ -1,7 +1,11 @@
 // @mui components
-import { useTheme, Box, Link } from "@mui/material";
+import { useTheme, Box, Link, IconButton } from "@mui/material";
+
+// @mui icons
+import MenuIcon from "@mui/icons-material/Menu";
 
 // sito components
+import SitoContainer from "sito-container";
 import SitoImage from "sito-image";
 
 // contexts
@@ -37,11 +41,24 @@ const Navbar = () => {
         alignItems: "center",
       }}
     >
-      <SitoImage
-        src={Logo}
-        alt="logo"
-        sx={{ width: "130px", height: "55px" }}
-      />
+      <SitoContainer alignItems="center" justifyContent="flex-start">
+        <IconButton
+          color="primary"
+          sx={{
+            display: { lg: "none" },
+            marginRight: "20px",
+            width: "60px",
+            height: "60px",
+          }}
+        >
+          <MenuIcon sx={{ fontSize: "2.5rem" }} />
+        </IconButton>
+        <SitoImage
+          src={Logo}
+          alt="logo"
+          sx={{ width: "130px", height: "55px" }}
+        />
+      </SitoContainer>
       <Box sx={{ display: { xs: "none", lg: "flex" }, alignItems: "center" }}>
         {Object.values(languageState.texts.Links).map((item) => (
           <Link
