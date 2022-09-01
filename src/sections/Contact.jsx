@@ -8,11 +8,12 @@ import { Circle } from "@mui/icons-material";
 import SitoContainer from "sito-container";
 import SitoImage from "sito-image";
 
+// own components
+import Motion from "../components/Motion";
+import Bubble from "../components/Bubble";
+
 // contexts
 import { useLanguage } from "../context/LanguageProvider";
-
-// images
-import Bubble from "../assets/images/bubble.png";
 
 const Contact = () => {
   const theme = useTheme();
@@ -29,57 +30,29 @@ const Contact = () => {
         position: "relative",
       }}
     >
-      <Box
-        className="float-radial"
-        sx={{
-          width: "150px",
-          height: "90px",
-          left: -100,
-          top: "50%",
-        }}
-      >
-        <SitoImage
-          src={Bubble}
-          alt="bubble"
-          sx={{ objectFit: "contain", width: "100%", height: "100%" }}
-        />
-      </Box>
-      <Box
-        className="float-y"
-        sx={{
-          display: { xs: "none", md: "initial" },
-          width: "360px",
-          height: "234px",
-          right: 0,
-        }}
-      >
-        <SitoImage
-          src={Bubble}
-          alt="bubble"
-          sx={{ objectFit: "contain", width: "100%", height: "100%" }}
-        />
-      </Box>
-      <Box
-        className="float-y"
-        sx={{
-          width: "250px",
-          height: "160px",
-          right: "20%",
-          top: "90%",
-          transform: "rotate(45deg)",
-        }}
-      >
-        <SitoImage
-          src={Bubble}
-          alt="bubble"
-          sx={{
-            objectFit: "contain",
-            width: "100%",
-            height: "100%",
-            filter: "blur(4px)",
-          }}
-        />
-      </Box>
+      <Bubble
+        animation="float-radial"
+        width="150px"
+        height="90px"
+        left="-100px"
+        top="50%"
+      />
+      <Bubble
+        animation="float-y"
+        width="360px"
+        height="234px"
+        right="0"
+        display={{ xs: "none", md: "initial" }}
+      />
+      <Bubble
+        animation="float-y"
+        width="250px"
+        height="160px"
+        right="20%"
+        top="90%"
+        transform="rotate(45deg)"
+        filter="blur(4px)"
+      />
       {/* main section */}
       <Box sx={{ display: "flex" }}>
         <Box

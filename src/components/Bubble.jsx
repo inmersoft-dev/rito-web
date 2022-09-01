@@ -20,6 +20,7 @@ const Bubble = (props) => {
     left,
     top,
     right,
+    display,
   } = props;
 
   return (
@@ -31,6 +32,7 @@ const Bubble = (props) => {
         left,
         top,
         right,
+        display,
       }}
     >
       <Box className={extraAnimation} sx={{ width, height }}>
@@ -56,7 +58,8 @@ Bubble.defaultProps = {
   filter: undefined,
   left: undefined,
   right: undefined,
-  top: "undefined",
+  top: undefined,
+  display: undefined,
 };
 
 Bubble.propTypes = {
@@ -69,6 +72,7 @@ Bubble.propTypes = {
   left: PropTypes.string,
   top: PropTypes.string,
   right: PropTypes.string,
+  display: PropTypes.object,
 };
 
 export default Bubble;
