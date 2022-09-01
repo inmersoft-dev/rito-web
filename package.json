@@ -1,6 +1,6 @@
 {
   "name": "rito-page",
-  "version": "0.2.24",
+  "version": "0.3.11",
   "private": true,
   "dependencies": {
     "@emotion/css": "^11.10.0",
