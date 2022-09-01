@@ -11,6 +11,9 @@ import dark from "./assets/theme/dark";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
+// layouts
+import Boss from "./layouts/Boss";
+
 // sections
 import Hero from "./sections/Hero";
 import About from "./sections/About";
@@ -28,6 +31,7 @@ function App() {
         <Hero />
         <About />
         <Buy />
+        <Boss />
         <Contact />
         <Footer />
       </SitoContainer>

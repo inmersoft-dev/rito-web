@@ -19,7 +19,8 @@ const CatchToAction = () => {
       id="buy"
       sx={{
         background: `url(${Catch})`,
-        backgroundSize: "contain",
+        backgroundRepeat: { xs: "no-repeat", lg: "repeat" },
+        backgroundSize: { xs: "175%", md: "contain" },
         width: "100%",
         padding: { xs: "40px", md: "50px 15rem", lg: "50px 20rem" },
         height: "70vh",

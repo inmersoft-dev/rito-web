@@ -96,6 +96,11 @@
         ]
       }
     },
+    "Boss": {
+      "Description": "\"Trabajamos para la comunidad y por la comunidad. Queremos ofrecer el agua y hielo con la mayor calidad posible.\"",
+      "Who": "José",
+      "Role": "Co-Fundador"
+    },
     "Contact": {
       "SmallTitle": "A tu disposición",
       "BigTitle": "Contáctanos para cualquier información o servicio",
