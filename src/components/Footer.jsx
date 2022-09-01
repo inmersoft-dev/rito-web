@@ -21,9 +21,9 @@ const Footer = () => {
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "space-between",
-        padding: "40px 0 0 0",
-        paddingRight: { xs: "20px", sm: "40px" },
-        paddingLeft: { lg: "12rem", md: "5rem", sm: "40px", xs: "20px" },
+        padding: "40px 0 40px 0",
+        paddingRight: { xs: "40px" },
+        paddingLeft: { lg: "12rem", md: "5rem", xs: "40px" },
         background: theme.palette.primary.main,
       }}
     >

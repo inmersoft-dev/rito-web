@@ -23,8 +23,7 @@ const CatchToAction = () => {
         backgroundSize: { xs: "175%", md: "contain" },
         width: "100%",
         padding: {
-          xs: "40px 20px 40px 20px",
-          sm: "40px",
+          xs: "40px",
           md: "50px 15rem",
           lg: "50px 20rem",
         },

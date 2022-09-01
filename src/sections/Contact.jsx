@@ -92,7 +92,8 @@ const Contact = () => {
             alignItems: "flex-start",
             justifyContent: "center",
             padding: { xs: "100px 0 0 0", md: "100px 0 100px 0" },
-            paddingLeft: { lg: "12rem", md: "5rem", sm: "40px", xs: "20px" },
+            paddingRight: { xs: "40px", md: 0 },
+            paddingLeft: { lg: "12rem", md: "5rem", xs: "40px" },
           }}
         >
           <Motion delay={0.2}>
@@ -167,7 +168,9 @@ const Contact = () => {
           sx={{
             width: "100%",
             zIndex: 10,
-            padding: "100px 20px 100px 20px",
+            padding: { xs: "100px 0 100px 0", md: "100px 0 100px 0" },
+            paddingRight: { xs: "20px", sm: "40px" },
+            paddingLeft: { xs: "20px", md: 0 },
           }}
           onSubmit={handleSubmit(onSubmit)}
         >

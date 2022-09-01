@@ -1,10 +1,13 @@
 // framer-motion
 import { motion } from "framer-motion";
 
+// @emotion/css
+import { css } from "@emotion/css";
+
 import PropTypes from "prop-types";
 
 const Motion = (props) => {
-  const { children, delay } = props;
+  const { children, delay, sx } = props;
 
   return (
     <motion.div
@@ -12,6 +15,7 @@ const Motion = (props) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay }}
+      className={css({ ...sx })}
     >
       {children}
     </motion.div>
@@ -20,11 +24,13 @@ const Motion = (props) => {
 
 Motion.defaultProps = {
   delay: 0,
+  sx: {},
 };
 
 Motion.propTypes = {
   children: PropTypes.node.isRequired,
   delay: PropTypes.number,
+  sx: PropTypes.object,
 };
 
 export default Motion;

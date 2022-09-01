@@ -72,7 +72,7 @@ const Process = () => {
         transform="rotate(45deg)"
         filter="blur(4px)"
       />
-      <Motion delay={0.2}>
+      <Motion delay={0.2} sx={{ zIndex: 1 }}>
         <Typography
           variant="h3"
           sx={{
